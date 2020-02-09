@@ -1,0 +1,8 @@
+// This is local parameters to be injected using the config module
+// This file shall be stored in the 'config' folder
+{
+    "ServicePorts": {
+        "jokesPort": "3000",
+        "otherPort": "3001"
+    }
+}

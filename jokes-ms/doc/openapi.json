@@ -1,0 +1,49 @@
+openapi: "3.0.0"
+info:
+  title: Jokes service API
+  version: 0.0.1
+paths:
+    /v1/jokes:
+        get:
+        operationId: getjokesv1
+        summary: Get title of all jokes
+        responses:
+            '200':
+            description: |-
+                200 response
+            content:
+                application/json:
+                examples: 
+                    foo:
+                    value: {
+                        "jokes": [
+                            {
+                                "title": "The best joke",
+                                "updated": "2011-01-21T11:33:21Z",
+                                "id": "12345"
+                            },
+                            {
+                                "title": "The second best joke",
+                                "updated": "2020-01-21T11:33:21Z",
+                                "id": "12346"
+                            },
+                        ]
+                    }
+    /v1/randomjoke:
+        get:
+        operationId: getrandomjokev1
+        summary: Get a random joke
+        responses:
+            '200':
+            description: |-
+                200 response
+            content:
+                application/json:
+                examples: 
+                    foo:
+                    value: {
+                                "title": "The best joke",
+                                "updated": "2011-01-21T11:33:21Z",
+                                "id": "12345",
+                                "body": "Once upon a time, there was a joke"
+                    }                  
