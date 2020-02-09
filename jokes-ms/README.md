@@ -11,3 +11,12 @@ Developed in nodejs using the express module. To prepare environment (if not usi
 
 <H2>Files</H2>
 commonConfig/defaults.json - contains dictionary used by node e.g. for ports to serve on. Not nice but a start
+
+<H2>Building the docker image</H2>
+A Dockerfile in the code directory specify how the image shall be created. Do this by:
+> docker build -t skonk/jokes-ms .
+
+<H2>Starting the image using docker</H2>
+> docker run -p 3000:3000 -d skonk/jokes-ms
+
+
